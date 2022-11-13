@@ -1,0 +1,138 @@
+$button-width: 200px;
+$button-height: 30px;
+$text-colour: whitesmoke;
+$div-background-main: rgba(0, 0, 0, 0.55);
+$div-background-border: rgba(101, 37, 212, 0.2);
+$div-border: 2px gray solid;
+$button-hover-colour: rgba(67, 81, 163, 0.55);
+$div-box-width: 1000px;
+$div-box-height: 800px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.about {
+  width: $div-box-width;
+  height: $div-box-height;
+  margin-top: 80px;
+  margin-left: calc(100% / 4);
+  margin-right: calc(100% / 4);
+  //   background-color: $div-background-main;
+  background-color: $div-background-border;
+  border-radius: 12px;
+  &__header {
+    display: flex;
+    align-items: center;
+    &--skills {
+      background-color: $div-background-main;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc($div-box-width / 4);
+      height: 100px;
+      border: $div-border;
+      margin: 30px;
+      color: $text-colour;
+      font-size: 30px;
+    }
+    &--projects {
+      background-color: $div-background-main;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc($div-box-width / 1);
+      height: 100px;
+      border: $div-border;
+      margin-right: 30px;
+      color: $text-colour;
+      font-size: 40px;
+    }
+  }
+  &__main {
+    height: calc($div-box-height - 130px);
+    // border: $div-border;
+    display: flex;
+    justify-content: center;
+
+    &__panel {
+      background-color: $div-background-main;
+      width: calc($div-box-width / 4);
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+      justify-content: space-between;
+      border: $div-border;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 60px;
+
+      &--btn {
+        background-color: $div-background-main;
+        font-size: 20px;
+        border: $div-border;
+        color: $text-colour;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 15px;
+        &:hover {
+          background-color: $button-hover-colour;
+          background-color: aqua;
+        }
+      }
+    }
+    &__display {
+      background-color: $div-background-main;
+      width: calc($div-box-width / 1);
+      margin-right: 30px;
+      margin-bottom: 60px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border: $div-border;
+      &--header {
+        margin: 20px;
+        color: $text-colour;
+        font-size: 45px;
+      }
+      &--para {
+        margin: 20px;
+        padding: 20px;
+        font-size: 25px;
+        color: $text-colour;
+        border: $div-border;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+  }
+}
+.gallery {
+  width: calc($div-box-width / 2);
+  display: flex;
+  justify-content: space-around;
+
+  &__card {
+    flex-direction: column;
+  }
+  &__img {
+    border: 5px $text-colour solid;
+    &--text {
+      font-size: 30px;
+      margin-left: 15%;
+      color: $text-colour;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  & > a {
+    color: aqua;
+  }
+}

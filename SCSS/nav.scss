@@ -1,0 +1,124 @@
+$button-width: 200px;
+$button-height: 30px;
+$text-colour: whitesmoke;
+$div-background-main: rgba(0, 0, 0, 0.55);
+$div-background-border: rgba(101, 37, 212, 0.2);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $div-background-main;
+
+  & > a {
+    text-decoration: none;
+    color: $text-colour;
+  }
+
+  &__btn {
+    width: calc($button-width + 10px);
+    height: calc($button-height + 10px);
+    font-size: 30px;
+    background-image: linear-gradient(
+      90deg,
+      #00c0ff 0%,
+      #ffcf00 49%,
+      #fc4f4f 80%,
+      #00c0ff 100%
+    );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:after {
+      content: attr(alt);
+      width: $button-width;
+      height: $button-height;
+      background-color: #191919;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:hover {
+      animation: slide 2s linear infinite;
+    }
+    @keyframes slide {
+      to {
+        background-position: 130px;
+      }
+    }
+  }
+}
+
+body {
+  background-image: url("../IMGS/space.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.space {
+  &__img {
+    display: flex;
+    justify-content: space-evenly;
+
+    &--link {
+      height: 12%;
+      width: 12%;
+      &:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes shake {
+        0% {
+          transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+          transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+          transform: translate(-3px, 0px) rotate(1deg);
+        }
+        30% {
+          transform: translate(3px, 2px) rotate(0deg);
+        }
+        40% {
+          transform: translate(1px, -1px) rotate(1deg);
+        }
+        50% {
+          transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        60% {
+          transform: translate(-3px, 1px) rotate(0deg);
+        }
+        70% {
+          transform: translate(3px, 1px) rotate(-1deg);
+        }
+        80% {
+          transform: translate(-1px, -1px) rotate(1deg);
+        }
+        90% {
+          transform: translate(1px, 2px) rotate(0deg);
+        }
+        100% {
+          transform: translate(1px, -2px) rotate(-1deg);
+        }
+      }
+    }
+  }
+}

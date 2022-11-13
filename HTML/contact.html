@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="stylesheet" href="../CSS/contact.css" />
+    <link rel="stylesheet" href="../Sections/nav.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <main>
+      <nav class="nav">
+        <!-- Projects Button -->
+        <a href="skills.html" class="nav__btn" alt="Skills"></a>
+        <a href="about.html" class="nav__btn" alt="About Me"></a>
+        <a href="contact.html" class="nav__btn" alt="Contact"></a>
+      </nav>
+      <section class="space__img">
+        <img
+          class="space__img--link space__img--link--skills"
+          src="../IMGS/spaceship.png"
+        />
+        <img
+          class="space__img--link space__img--link--contact"
+          src="../IMGS/spaceship.png"
+        />
+        <img
+          class="space__img--link space__img--link--contact"
+          src="../IMGS/spaceship.png"
+        />
+      </section>
+      <div class="contact">
+        <card class="contact__header">
+          <h2 class="contact__header--links">My Links</h2>
+          <h2 class="contact__header--contact">Contact Me</h2>
+        </card>
+        <div class="contact__main">
+          <div class="contact__main__panel">
+            <a href="https://github.com/J4V4N3RD">
+              <buton type="submit" class="contact__main__panel--btn">
+                GitHub
+              </buton></a
+            >
+            <a href="https://www.linkedin.com/in/luke-kelley">
+              <buton class="contact__main__panel--btn"> LinkedIn </buton></a
+            >
+            <a href="mailto:LJ_kelley@hotmail.com">
+              <buton class="contact__main__panel--btn"> Email </buton></a
+            >
+          </div>
+          <div class="contact__main__display">
+            <p class="contact__main__display--para">
+              If you like what you have seen so far and want to connect, you can
+              click on one of the links in the side bar or fill out the form
+              below and I'll contact you!
+            </p>
+            <form class="contact__main__display__form" action="landing.html">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+              <input
+                type="tel"
+                name="number"
+                id="number"
+                placeholder="Number"
+              />
+              <textarea
+                type="text"
+                name="message"
+                id="message"
+                placeholder="Type your message here"
+                required
+                rows="10"
+                cols="48.5"
+              ></textarea>
+              <button type="submit" value="Submit">Submit</button>
+            </form>
+          </div>
+          <footer hidden>Copyright Luke Kelley</footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
