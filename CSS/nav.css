@@ -3,29 +3,46 @@
   padding: 0;
 }
 
-.nav {
-  margin-top: 20px;
-  height: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.55);
+body {
+  background-image: url("../IMGS/space.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.nav > a {
+
+a {
+  font-size: 35px;
   text-decoration: none;
-  color: whitesmoke;
+}
+a:hover + .ship {
+  animation: shake 0.5s infinite;
+}
+a:hover {
+  animation: slide 2s linear infinite;
+}
+
+.nav {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav__card {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav__btn {
-  width: 210px;
-  height: 40px;
-  font-size: 30px;
+  width: 212px;
+  height: 42px;
+  text-decoration: none;
+  color: whitesmoke;
   background-image: linear-gradient(90deg, #00c0ff 0%, #ffcf00 49%, #fc4f4f 80%, #00c0ff 100%);
-  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-transform: uppercase;
   font-weight: bold;
+  border-radius: 10px;
 }
 .nav__btn:after {
   content: attr(alt);
@@ -36,37 +53,27 @@
   align-items: center;
   justify-content: center;
 }
-.nav__btn:hover {
-  animation: slide 2s linear infinite;
+.nav__btn__ship {
+  margin-top: 20px;
+  height: 70%;
+  width: 70%;
+  animation: float 2s infinite ease;
 }
 @keyframes slide {
   to {
     background-position: 130px;
   }
 }
-
-body {
-  background-image: url("../IMGS/space.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-a {
-  text-decoration: none;
-}
-
-.space__img {
-  display: flex;
-  justify-content: space-evenly;
-}
-.space__img--link {
-  height: 12%;
-  width: 12%;
-}
-.space__img--link:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 @keyframes shake {
   0% {

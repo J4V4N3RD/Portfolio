@@ -4,52 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="../CSS/main.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+<!-- Styles -->
     <link rel="stylesheet" href="../CSS/skills.css" />
-    <link rel="stylesheet" href="../Sections/nav.css" />
+    <link rel="stylesheet" href="../CSS/nav.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
     <title>Skills</title>
   </head>
   <body>
-    <main>
-      <nav class="nav">
-        <!-- Projects Button -->
-        <a href="skills.html" class="nav__btn" alt="Skills"></a>
-        <a href="about.html" class="nav__btn" alt="About Me"></a>
-        <a href="contact.html" class="nav__btn" alt="Contact"></a>
-      </nav>
-      <section class="space__img">
-        <img
-          class="space__img--link space__img--link--skills"
-          src="../IMGS/spaceship.png"
-        />
-        <img
-          class="space__img--link space__img--link--contact"
-          src="../IMGS/spaceship.png"
-        />
-        <img
-          class="space__img--link space__img--link--contact"
-          src="../IMGS/spaceship.png"
-        />
-      </section>
-      <div class="about">
-        <card class="about__header">
-          <h2 class="about__header--skills">My skills</h2>
-          <h2 class="about__header--projects">Projects</h2>
-        </card>
-        <div class="about__main">
-          <div class="about__main__panel">
-            <buton class="about__main__panel--btn"> HTML / CSS / SASS </buton>
-            <buton class="about__main__panel--btn"> Javascript/ReactJS </buton>
-            <buton class="about__main__panel--btn"> Java </buton>
-            <buton class="about__main__panel--btn"> Git </buton>
-            <buton class="about__main__panel--btn"> TDD </buton>
-            <buton class="about__main__panel--btn"> Google Firestone </buton>
-            <buton class="about__main__panel--btn"> SQL </buton>
+          <!-- Main Nav -->
+          <nav class="nav">
+            <!-- Skills Nav -->
+            <card class="nav__card">
+              <a href="skills.html" class="nav__btn" alt="SKILLS"></a>
+              <img
+                class="nav__btn__ship ship"
+                src="../IMGS/spaceship.png"
+                alt="Space Ship"
+              />
+            </card>
+            <!-- About Nav -->
+            <card class="nav__card">
+              <a href="about.html" class="nav__btn" alt="ABOUT ME"></a>
+              <img
+                class="nav__btn__ship ship"
+                src="../IMGS/spaceship.png"
+                alt="Space Ship"
+              />
+            </card>
+            <!-- Contact Nav -->
+            <card class="nav__card">
+              <a href="contact.html" class="nav__btn" alt="CONTACT"></a>
+              <img
+                class="nav__btn__ship ship"
+                src="../IMGS/spaceship.png"
+                alt="Space Ship"
+              />
+            </card>
+          </nav>
+          <main>
+          <div class="skills">
+            <div class="skills__header">
+          <h2 class="skills__header--skills">My Links</h2>
+          <h2 class="skills__header--projects">Projects</h2>
           </div>
-          <div class="about__main__display">
-            <h3 class="about__main__display--header">HTML</h3>
-            <p class="about__main__display--para">
+          <div class="skills__main">
+          <div class="skills__main__panel">
+            <buton class="skills__main__panel--btn"> HTML / CSS / SASS </buton>
+            <buton class="skills__main__panel--btn"> Javascript/ReactJS </buton>
+            <buton class="skills__main__panel--btn"> Java </buton>
+            <buton class="skills__main__panel--btn"> Git </buton>
+            <buton class="skills__main__panel--btn"> TDD </buton>
+            <buton class="skills__main__panel--btn"> Google Firestone </buton>
+            <buton class="skills__main__panel--btn"> SQL </buton>
+          </div>
+          <div class="skills__main__display">
+            <h3 class="skills__main__display--header">HTML</h3>
+            <p class="skills__main__display--para">
               Here are some projects i've worked on within Nology Lorem ipsum
               dolor sit amet consectetur adipisicing elit. Id dicta amet, cum
               magni voluptates quasi eum reiciendis quidem magnam. Et
@@ -75,9 +92,12 @@
               </div>
             </div>
           </div>
-          <footer hidden>Copyright Luke Kelley</footer>
         </div>
       </div>
+      </div>
     </main>
+    <footer class="footer">
+          <a href="landing.html" >Copyright Luke Kelley </a>
+        </footer>
   </body>
 </html>

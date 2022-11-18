@@ -1,0 +1,9 @@
+$text-colour: whitesmoke;
+
+.footer {
+  & > a {
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    color: $text-colour;
+  }
+}
