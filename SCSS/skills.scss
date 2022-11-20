@@ -1,3 +1,5 @@
+@use "./devices.scss";
+
 $button-width: 200px;
 $button-height: 30px;
 $text-colour: whitesmoke;
@@ -7,10 +9,81 @@ $div-border: 2px gray solid;
 $button-hover-colour: rgba(67, 81, 163, 0.55);
 $div-box-width: 1000px;
 $div-box-height: 800px;
-
+$div-width: 90vw;
 * {
   margin: 0;
   padding: 0;
+}
+// ID's
+// Display functions
+// ID names
+// HTML, Javascript, Java, Git, TDD, Firestore, SQL
+// #HTML {
+//   display: none;
+//   @include devices.phone {
+//     display: flex;
+//   }
+//   @include devices.tablet {
+//     display: flex;
+//   }
+// }
+#Javascript {
+  display: none;
+  @include devices.phone {
+    display: flex;
+  }
+  @include devices.tablet {
+    display: flex;
+  }
+}
+#Java {
+  display: none;
+  @include devices.phone {
+    display: flex;
+  }
+  @include devices.tablet {
+    display: flex;
+  }
+}
+#Git {
+  display: none;
+  @include devices.phone {
+    display: flex;
+  }
+  @include devices.tablet {
+    display: flex;
+  }
+}
+#TDD {
+  display: none;
+  @include devices.phone {
+    display: flex;
+  }
+  @include devices.tablet {
+    display: flex;
+  }
+}
+#Firestore {
+  display: none;
+  @include devices.phone {
+    display: flex;
+  }
+  @include devices.tablet {
+    display: flex;
+  }
+}
+#SQL {
+  display: none;
+  @include devices.phone {
+    display: flex;
+  }
+  @include devices.tablet {
+    display: flex;
+  }
+}
+
+.fire {
+  justify-content: center;
 }
 body {
   background-color: black;
@@ -18,77 +91,181 @@ body {
 main {
   display: flex;
   justify-content: center;
+  height: 100vh;
+}
+.fa-brands {
+  padding: 10px;
+}
+.fa-solid {
+  padding: 10px;
+}
+.fa-light {
+  padding: 10px;
+}
+.back-btn {
+  display: none;
+  @include devices.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+    background-color: $text-colour;
+    height: 40px;
+    width: 150px;
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 12px;
+    &:hover {
+      background-color: $button-hover-colour;
+      color: $text-colour;
+      box-shadow: 0 4px 8px $div-background-main;
+    }
+  }
+  @include devices.tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+    background-color: $text-colour;
+    height: 40px;
+    width: 150px;
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 12px;
+    &:hover {
+      background-color: $button-hover-colour;
+      color: $text-colour;
+      box-shadow: 0 4px 8px $div-background-main;
+    }
+  }
 }
 .skills {
-  width: $div-box-width;
+  width: 90vw;
   margin-top: 50px;
   background-color: $div-background-border;
   border-radius: 12px;
+  @include devices.phone {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  }
+  @include devices.tablet {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  }
   &__header {
     display: flex;
+    justify-content: center;
     align-items: center;
-    &--skills {
-      background-color: $div-background-main;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: calc($div-box-width / 4);
-      height: 100px;
-      border: $div-border;
+    background-color: $div-background-main;
+    width: 85vw;
+    border: $div-border;
+    margin: 30px;
+    color: $text-colour;
+    font-size: 50px;
+    @include devices.phone {
+      width: 80vw;
       margin: 30px 30px 0px 30px;
-      padding-left: 8px;
-      color: $text-colour;
-      font-size: 30px;
     }
-    &--projects {
-      background-color: $div-background-main;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: calc($div-box-width / 1);
-      height: 100px;
-      border: $div-border;
-      margin: 30px 45px 0px 0px;
-      color: $text-colour;
-      font-size: 40px;
+    @include devices.tablet {
+      width: 80vw;
+      margin: 30px 30px 0px 30px;
     }
   }
   &__main {
     display: flex;
     justify-content: center;
-
+    width: 90vw;
+    @include devices.phone {
+      display: flex;
+      flex-direction: column;
+    }
+    @include devices.tablet {
+      display: flex;
+      flex-direction: column;
+    }
     &__panel {
       background-color: $div-background-main;
-      width: calc($div-box-width / 4);
+      width: calc(90vw / 4);
       display: flex;
       align-content: center;
       flex-direction: column;
-      justify-content: space-between;
+      // justify-content: space-between;
       border: $div-border;
-      margin: 30px 0px 30px 30px;
-
-      &--btn {
-        background-color: $div-background-main;
-        font-size: 20px;
-        border: $div-border;
-        color: $text-colour;
+      margin: 20px 15px 20px 30px;
+      @include devices.phone {
         display: flex;
         justify-content: center;
-        align-content: center;
-        margin: 15px;
+        align-items: center;
+        flex-flow: wrap row;
+        width: 80vw;
+      }
+      @include devices.tablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap row;
+        width: 80vw;
+      }
+      &__card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px;
+        @include devices.phone {
+          margin: 2px;
+        }
+        @include devices.tablet {
+          margin: 2px;
+        }
         &:hover {
           background-color: $button-hover-colour;
+        }
+        &__icon {
+          color: $text-colour;
+          font-size: 30px;
+          display: flex;
+          align-items: center;
+          &--JUnit {
+            height: 20px;
+            width: 40px;
+            padding-right: 10px;
+          }
+          &--jest {
+            height: 30px;
+            width: 20px;
+          }
+          &--spring {
+            height: 30px;
+            width: 30px;
+          }
+        }
+        &__btn {
+          font-size: 15px;
+          padding: 10px;
+          color: $text-colour;
+          display: flex;
+          justify-content: flex-start;
         }
       }
     }
     &__display {
       background-color: $div-background-main;
-      width: calc($div-box-width / 1);
-      margin: 30px;
+      width: calc(90vw - (90vw / 4));
+      margin: 20px 30px 20px 30px;
       display: flex;
       align-items: center;
       flex-direction: column;
       border: $div-border;
+      @include devices.phone {
+        width: 80vw;
+        margin: 0px 30px 30px 30px;
+      }
+      @include devices.tablet {
+        width: 80vw;
+        margin: 0px 30px 30px 30px;
+      }
       &--header {
         margin: 10px;
         color: $text-colour;
@@ -107,14 +284,23 @@ main {
   }
 }
 .gallery {
-  width: calc($div-box-width / 2);
+  width: calc($div-width - 10vw);
   display: flex;
   justify-content: space-around;
-
+  margin: 50px;
+  @include devices.phone {
+    margin: 20px;
+  }
+  @include devices.tablet {
+  }
   &__img {
     border: 5px $text-colour solid;
+    @include devices.phone {
+      width: 100px;
+      height: 100px;
+    }
     &--text {
-      font-size: 15px;
+      font-size: 20px;
       text-align: center;
       color: $text-colour;
     }

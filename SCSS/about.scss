@@ -1,15 +1,24 @@
+@use "./devices.scss";
+
 $button-width: 200px;
 $button-height: 30px;
 $text-colour: whitesmoke;
 $div-background-main: rgba(0, 0, 0, 0.55);
 $div-background-border: rgba(101, 37, 212, 0.2);
+$div-width-devices: 80vw;
+$img-width: 40vw;
 * {
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: black;
+}
 main {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 .about {
   width: calc(100% / 2);
@@ -17,13 +26,25 @@ main {
   background-color: $div-background-main;
   border: 30px solid $div-background-border;
   border-radius: 12px;
-
+  @include devices.phone {
+    width: $div-width-devices;
+  }
+  @include devices.tablet {
+    width: $div-width-devices;
+  }
+  @include devices.tablet-landscape {
+    width: $div-width-devices;
+  }
+  @include devices.laptop {
+    width: $div-width-devices;
+  }
   &__main {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border: 2px gray solid;
+
     &__heading {
       margin: 5px;
       color: $text-colour;
@@ -33,18 +54,23 @@ main {
       margin: 10px;
       border-radius: 50%;
       border: 4px $text-colour solid;
+      @include devices.phone {
+        width: $img-width;
+      }
+      @include devices.tablet {
+        width: $img-width;
+      }
+      @include devices.tablet-landscape {
+        width: $img-width;
+      }
+      @include devices.laptop {
+        width: $img-width;
+      }
     }
     &__para {
       margin: 20px;
       font-size: 25px;
       color: $text-colour;
     }
-  }
-}
-.footer {
-  & > a {
-    font-family: "Dancing Script", cursive;
-    font-size: 20px;
-    color: $text-colour;
   }
 }

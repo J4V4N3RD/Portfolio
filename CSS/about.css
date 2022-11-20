@@ -3,9 +3,15 @@
   padding: 0;
 }
 
+body {
+  background-color: black;
+}
+
 main {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .about {
@@ -14,6 +20,26 @@ main {
   background-color: rgba(0, 0, 0, 0.55);
   border: 30px solid rgba(101, 37, 212, 0.2);
   border-radius: 12px;
+}
+@media only screen and (max-width: 576px) {
+  .about {
+    width: 80vw;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .about {
+    width: 80vw;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .about {
+    width: 80vw;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .about {
+    width: 80vw;
+  }
 }
 .about__main {
   display: flex;
@@ -32,14 +58,28 @@ main {
   border-radius: 50%;
   border: 4px whitesmoke solid;
 }
+@media only screen and (max-width: 576px) {
+  .about__main__img {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .about__main__img {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .about__main__img {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .about__main__img {
+    width: 40vw;
+  }
+}
 .about__main__para {
   margin: 20px;
   font-size: 25px;
-  color: whitesmoke;
-}
-
-.footer > a {
-  font-family: "Dancing Script", cursive;
-  font-size: 20px;
   color: whitesmoke;
 }

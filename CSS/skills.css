@@ -3,6 +3,94 @@
   padding: 0;
 }
 
+#Javascript {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  #Javascript {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  #Javascript {
+    display: flex;
+  }
+}
+
+#Java {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  #Java {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  #Java {
+    display: flex;
+  }
+}
+
+#Git {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  #Git {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  #Git {
+    display: flex;
+  }
+}
+
+#TDD {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  #TDD {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  #TDD {
+    display: flex;
+  }
+}
+
+#Firestore {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  #Firestore {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  #Firestore {
+    display: flex;
+  }
+}
+
+#SQL {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  #SQL {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  #SQL {
+    display: flex;
+  }
+}
+
+.fire {
+  justify-content: center;
+}
+
 body {
   background-color: black;
 }
@@ -10,78 +98,215 @@ body {
 main {
   display: flex;
   justify-content: center;
+  height: 100vh;
+}
+
+.fa-brands {
+  padding: 10px;
+}
+
+.fa-solid {
+  padding: 10px;
+}
+
+.fa-light {
+  padding: 10px;
+}
+
+.back-btn {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+    background-color: whitesmoke;
+    height: 40px;
+    width: 150px;
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 12px;
+  }
+  .back-btn:hover {
+    background-color: rgba(67, 81, 163, 0.55);
+    color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.55);
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+    background-color: whitesmoke;
+    height: 40px;
+    width: 150px;
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 12px;
+  }
+  .back-btn:hover {
+    background-color: rgba(67, 81, 163, 0.55);
+    color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.55);
+  }
 }
 
 .skills {
-  width: 1000px;
+  width: 90vw;
   margin-top: 50px;
   background-color: rgba(101, 37, 212, 0.2);
   border-radius: 12px;
 }
+@media only screen and (max-width: 576px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  }
+}
 .skills__header {
   display: flex;
-  align-items: center;
-}
-.skills__header--skills {
-  background-color: rgba(0, 0, 0, 0.55);
-  display: flex;
-  align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 100px;
-  border: 2px gray solid;
-  margin: 30px 30px 0px 30px;
-  padding-left: 8px;
-  color: whitesmoke;
-  font-size: 30px;
-}
-.skills__header--projects {
-  background-color: rgba(0, 0, 0, 0.55);
-  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 1000px;
-  height: 100px;
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 85vw;
   border: 2px gray solid;
-  margin: 30px 45px 0px 0px;
+  margin: 30px;
   color: whitesmoke;
-  font-size: 40px;
+  font-size: 50px;
+}
+@media only screen and (max-width: 576px) {
+  .skills__header {
+    width: 80vw;
+    margin: 30px 30px 0px 30px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills__header {
+    width: 80vw;
+    margin: 30px 30px 0px 30px;
+  }
 }
 .skills__main {
   display: flex;
   justify-content: center;
+  width: 90vw;
+}
+@media only screen and (max-width: 576px) {
+  .skills__main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills__main {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .skills__main__panel {
   background-color: rgba(0, 0, 0, 0.55);
-  width: 250px;
+  width: 22.5vw;
   display: flex;
   align-content: center;
   flex-direction: column;
-  justify-content: space-between;
   border: 2px gray solid;
-  margin: 30px 0px 30px 30px;
+  margin: 20px 15px 20px 30px;
 }
-.skills__main__panel--btn {
-  background-color: rgba(0, 0, 0, 0.55);
-  font-size: 20px;
-  border: 2px gray solid;
+@media only screen and (max-width: 576px) {
+  .skills__main__panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row;
+    width: 80vw;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills__main__panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row;
+    width: 80vw;
+  }
+}
+.skills__main__panel__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+}
+@media only screen and (max-width: 576px) {
+  .skills__main__panel__card {
+    margin: 2px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills__main__panel__card {
+    margin: 2px;
+  }
+}
+.skills__main__panel__card:hover {
+  background-color: rgba(67, 81, 163, 0.55);
+}
+.skills__main__panel__card__icon {
+  color: whitesmoke;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+.skills__main__panel__card__icon--JUnit {
+  height: 20px;
+  width: 40px;
+  padding-right: 10px;
+}
+.skills__main__panel__card__icon--jest {
+  height: 30px;
+  width: 20px;
+}
+.skills__main__panel__card__icon--spring {
+  height: 30px;
+  width: 30px;
+}
+.skills__main__panel__card__btn {
+  font-size: 15px;
+  padding: 10px;
   color: whitesmoke;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  margin: 15px;
-}
-.skills__main__panel--btn:hover {
-  background-color: rgba(67, 81, 163, 0.55);
+  justify-content: flex-start;
 }
 .skills__main__display {
   background-color: rgba(0, 0, 0, 0.55);
-  width: 1000px;
-  margin: 30px;
+  width: 67.5vw;
+  margin: 20px 30px 20px 30px;
   display: flex;
   align-items: center;
   flex-direction: column;
   border: 2px gray solid;
+}
+@media only screen and (max-width: 576px) {
+  .skills__main__display {
+    width: 80vw;
+    margin: 0px 30px 30px 30px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills__main__display {
+    width: 80vw;
+    margin: 0px 30px 30px 30px;
+  }
 }
 .skills__main__display--header {
   margin: 10px;
@@ -99,15 +324,27 @@ main {
 }
 
 .gallery {
-  width: 500px;
+  width: 80vw;
   display: flex;
   justify-content: space-around;
+  margin: 50px;
+}
+@media only screen and (max-width: 576px) {
+  .gallery {
+    margin: 20px;
+  }
 }
 .gallery__img {
   border: 5px whitesmoke solid;
 }
+@media only screen and (max-width: 576px) {
+  .gallery__img {
+    width: 100px;
+    height: 100px;
+  }
+}
 .gallery__img--text {
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   color: whitesmoke;
 }
