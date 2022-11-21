@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("../IMGS/space.jpg");
+  background-image: url("../imgs/space.jpg");
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -13,20 +13,29 @@ body {
 }
 
 a {
-  font-size: 35px;
   text-decoration: none;
 }
-a:hover + .ship {
+
+button {
+  font-size: 35px;
+}
+button:hover + .ship {
   animation: shake 0.5s infinite;
 }
-a:hover {
+button:hover {
   animation: slide 2s linear infinite;
+}
+
+.name {
+  color: whitesmoke;
+  font-size: 100px;
+  font-family: "Dancing Script", cursive;
 }
 
 .nav {
   margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 576px) {
   .nav {
@@ -42,12 +51,10 @@ a:hover {
   align-items: center;
 }
 .nav__btn {
-  font-size: 20px;
-  width: 21.5vw;
+  width: 11.5vw;
   height: 4.5vh;
   text-decoration: none;
-  color: whitesmoke;
-  background-image: linear-gradient(90deg, #00c0ff 0%, #ffcf00 49%, #fc4f4f 80%, #00c0ff 100%);
+  background-image: linear-gradient(90deg, #776cf6 0%, #454453 49%, #69daf1 80%, #776cf6 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,17 +63,20 @@ a:hover {
 }
 @media only screen and (max-width: 576px) {
   .nav__btn {
-    width: 21.5vw;
+    width: 11.5vw;
     height: 5vh;
     font-size: 15px;
   }
 }
-.nav__btn:after {
-  content: attr(alt);
-  width: 20vw;
+.nav__btn__link {
+  width: 10vw;
   height: 3vh;
   background-color: #191919;
+  color: whitesmoke;
+  font-size: 25px;
+  border-radius: 12px;
   display: flex;
+  text-decoration: none;
   align-items: center;
   justify-content: center;
 }

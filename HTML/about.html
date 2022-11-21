@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/d4d2ef45ad.js" crossorigin="anonymous"></script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,45 +15,86 @@
       rel="stylesheet"
     />
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="../CSS/about.css" />
-    <link rel="stylesheet" href="../CSS/nav.css" />
-    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
     <title>About</title>
   </head>
   <body>
-    <body>
           <!-- Main Nav -->
           <nav class="nav">
-            <!-- Skills Nav -->
+
+            <!-- Projects Nav -->
             <card class="nav__card">
-              <a href="skills.html" class="nav__btn" alt="SKILLS"></a>
+             <button class="nav__btn"> <a href="skills.html" class=" nav__btn__link" alt="skills button">PROJECTS</a></button>
               <img
                 class="nav__btn__ship ship"
-                src="../IMGS/spaceship.png"
+                src="../imgs/spaceship.png"
                 alt="Space Ship"
               />
             </card>
+
+            <h1 class="name">Luke Kelley ...</h1>
+        
             <!-- About Nav -->
             <card class="nav__card">
-              <a href="about.html" class="nav__btn" alt="ABOUT"></a>
+              <button class="nav__btn" alt="home button"><a href="about.html" class="nav__btn__link" >HOME</a></button>
               <img
                 class="nav__btn__ship ship"
-                src="../IMGS/spaceship.png"
+                src="../imgs/spaceship.png"
                 alt="Space Ship"
               />
             </card>
-            <!-- Contact Nav -->
-            <card class="nav__card">
-              <a href="contact.html" class="nav__btn" alt="CONTACT"></a>
-              <img
-                class="nav__btn__ship ship"
-                src="../IMGS/spaceship.png"
-                alt="Space Ship"
-              />
-            </card>
+
           </nav>
+
           <main>
+
       <div class="about">
+
+<div class="about__panel">
+        <!-- Heading -->
+          <card class="about__panel__card">
+              <h3>
+                Contact Me
+              </h3>
+            </card>
+
+            <!-- Github -->
+            <card class="about__panel__card">
+            <a href="https://github.com/J4V4N3RD">
+              <icon>
+              <i class="fa-brands fa-github"></i>
+              </icon>
+              <buton>
+                GitHub
+              </buton></a
+            >
+          </card>
+
+            <!-- LinkedIn -->
+            <card class="about__panel__card">
+            <a href="https://www.linkedin.com/in/luke-kelley">
+              <icon>
+              <i class="fa-brands fa-linkedin"></i>
+              </icon>
+              <buton> LinkedIn </buton></a
+            >
+              </card>
+
+
+            <!-- Email -->
+            <card class="about__panel__card">
+            <a href="mailto:LJ_kelley@hotmail.com">
+              <icon>
+             <i class="fa-solid fa-square-envelope"></i>
+             </icon>
+              <buton> Email </buton></a
+            >
+            </card>
+
+          </div>
+
         <div class="about__main">
           <h2 class="about__main__heading">About me</h2>
           <img
@@ -69,8 +113,86 @@
             nulla consectetur officia blanditiis consequatur magnam ipsam!
           </p>
         </div> 
-      </div>
+      
      
+        <div class="about__panel">
+
+          <card class="about__panel__card">
+              <h3>
+                SKILLS
+              </h3>
+            </card>
+
+            <!-- HTML, CSS, SASS -->
+            <card class="about__panel__card">
+                <icon class="space-between">
+                  <i class="fa-brands fa-html5"></i
+                  ><i class="fa-brands fa-css3-alt"></i
+                  ><i class="fa-brands fa-sass"></i
+                ></icon>
+                <p
+                  >HTML &nbsp;/&nbsp; CSS &nbsp;/&nbsp; SASS
+                  </p>
+            </card>
+
+            <!-- Javscript / ReactJS -->
+            <card class="about__panel__card">
+              <icon>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-react"></i>
+              </icon>
+              <p>
+                Javascript/ReactJS
+              </p>
+            </card>
+
+<!-- Java -->
+            <card class="about__panel__card">
+              <icon>
+                <i class="fa-brands fa-java"></i
+                ></icon>
+              <p>
+                Java / Spring
+              </p>
+            </card>
+
+<!-- Git -->
+            <card class="about__panel__card">
+              <icon>
+                <i class="fa-brands fa-git"></i
+              ></icon>
+              <p> Git </p>
+            </card>
+
+            <!-- TDD -->
+            <card class="about__panel__card">
+              <icon>
+                <i class="fa-solid fa-file-pen"></i
+                ></icon>
+              <p>
+                TDD / JUnit /Jest
+              </p>
+            </card>
+
+            <!-- Google Firestore -->
+            <card class="about__panel__card">
+              <icon>
+                <i class="fa-solid fa-fire"></i
+              ></icon>
+              <p>
+                Google Firestore
+              </p>
+            </card>
+
+            <!-- SQL -->
+            <card class="about__panel__card">
+              <icon>
+                <i class="fa-solid fa-database"></i>
+              </icon>
+              <p> SQL </p>
+            </card>
+
+          </div>
     </main>
      <footer class="footer">
           <a href="landing.html" >Copyright Luke Kelley ©</a>
