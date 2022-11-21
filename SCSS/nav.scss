@@ -32,6 +32,11 @@ button {
     animation: slide 2s linear infinite;
   }
 }
+.name {
+  color: $text-colour;
+  font-size: 100px;
+  font-family: "Dancing Script", cursive;
+}
 
 .nav {
   margin-top: 50px;

@@ -140,10 +140,14 @@ main {
   }
 }
 .skills {
-  width: 90vw;
-  margin-top: 50px;
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: $div-background-border;
   border-radius: 12px;
+  color: $text-colour;
+  margin-top: 50px;
   @include devices.phone {
     display: flex;
     flex-direction: column;
@@ -159,10 +163,9 @@ main {
     justify-content: center;
     align-items: center;
     background-color: $div-background-main;
-    width: 85vw;
+    width: 80vw;
     border: $div-border;
     margin: 30px;
-    color: $text-colour;
     font-size: 50px;
     @include devices.phone {
       width: 80vw;
@@ -173,136 +176,43 @@ main {
       margin: 30px 30px 0px 30px;
     }
   }
-  &__main {
+  &__display {
+    width: 80vw;
+    height: 80vh;
     display: flex;
-    justify-content: center;
-    width: 90vw;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: $div-background-main;
+    border: $div-border;
+    margin: 30px;
     @include devices.phone {
-      display: flex;
-      flex-direction: column;
+      width: 80vw;
+      margin: 0px 30px 30px 30px;
     }
     @include devices.tablet {
-      display: flex;
-      flex-direction: column;
+      width: 80vw;
+      margin: 0px 30px 30px 30px;
     }
-    &__panel {
-      background-color: $div-background-main;
-      width: calc(90vw / 4);
-      display: flex;
-      align-content: center;
-      flex-direction: column;
-      // justify-content: space-between;
-      border: $div-border;
-      margin: 20px 15px 20px 30px;
-      @include devices.phone {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: wrap row;
-        width: 80vw;
-      }
-      @include devices.tablet {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: wrap row;
-        width: 80vw;
-      }
-      &__card {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 5px;
-        @include devices.phone {
-          margin: 2px;
-        }
-        @include devices.tablet {
-          margin: 2px;
-        }
-        &:hover {
-          background-color: $button-hover-colour;
-        }
-        &__icon {
-          color: $text-colour;
-          font-size: 30px;
-          display: flex;
-          align-items: center;
-          &--JUnit {
-            height: 20px;
-            width: 40px;
-            padding-right: 10px;
-          }
-          &--jest {
-            height: 30px;
-            width: 20px;
-          }
-          &--spring {
-            height: 30px;
-            width: 30px;
-          }
-        }
-        &__btn {
-          font-size: 15px;
-          padding: 10px;
-          color: $text-colour;
-          display: flex;
-          justify-content: flex-start;
-        }
-      }
-    }
-    &__display {
-      background-color: $div-background-main;
-      width: calc(90vw - (90vw / 4));
-      margin: 20px 30px 20px 30px;
+    &__card {
       display: flex;
       align-items: center;
       flex-direction: column;
-      border: $div-border;
-      @include devices.phone {
-        width: 80vw;
-        margin: 0px 30px 30px 30px;
+      justify-content: space-between;
+      padding: 20px;
+      height: 25vh;
+      background-color: $div-background-main;
+
+      & > img {
+        border: 5px $text-colour solid;
+        width: 9vw;
+        height: 15vh;
+        @include devices.phone {
+          width: 100px;
+          height: 100px;
+        }
       }
-      @include devices.tablet {
-        width: 80vw;
-        margin: 0px 30px 30px 30px;
-      }
-      &--header {
-        margin: 10px;
-        color: $text-colour;
-        font-size: 30px;
-      }
-      &--para {
-        margin: 10px;
-        padding: 20px;
-        font-size: 20px;
-        color: $text-colour;
-        border: $div-border;
-        border-left: 0;
-        border-right: 0;
-      }
-    }
-  }
-}
-.gallery {
-  width: calc($div-width - 10vw);
-  display: flex;
-  justify-content: space-around;
-  margin: 50px;
-  @include devices.phone {
-    margin: 20px;
-  }
-  @include devices.tablet {
-  }
-  &__img {
-    border: 5px $text-colour solid;
-    @include devices.phone {
-      width: 100px;
-      height: 100px;
-    }
-    &--text {
-      font-size: 20px;
-      text-align: center;
-      color: $text-colour;
     }
   }
 }

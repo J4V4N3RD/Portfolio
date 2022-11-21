@@ -32,6 +32,7 @@ main {
   display: flex;
   align-content: center;
   justify-content: center;
+
   @include devices.phone {
     width: $div-box-width-devices;
     justify-content: center;
