@@ -14,77 +14,7 @@ $div-width: 90vw;
   margin: 0;
   padding: 0;
 }
-// ID's
-// Display functions
-// ID names
-// HTML, Javascript, Java, Git, TDD, Firestore, SQL
-// #HTML {
-//   display: none;
-//   @include devices.phone {
-//     display: flex;
-//   }
-//   @include devices.tablet {
-//     display: flex;
-//   }
-// }
-#Javascript {
-  display: none;
-  @include devices.phone {
-    display: flex;
-  }
-  @include devices.tablet {
-    display: flex;
-  }
-}
-#Java {
-  display: none;
-  @include devices.phone {
-    display: flex;
-  }
-  @include devices.tablet {
-    display: flex;
-  }
-}
-#Git {
-  display: none;
-  @include devices.phone {
-    display: flex;
-  }
-  @include devices.tablet {
-    display: flex;
-  }
-}
-#TDD {
-  display: none;
-  @include devices.phone {
-    display: flex;
-  }
-  @include devices.tablet {
-    display: flex;
-  }
-}
-#Firestore {
-  display: none;
-  @include devices.phone {
-    display: flex;
-  }
-  @include devices.tablet {
-    display: flex;
-  }
-}
-#SQL {
-  display: none;
-  @include devices.phone {
-    display: flex;
-  }
-  @include devices.tablet {
-    display: flex;
-  }
-}
 
-.fire {
-  justify-content: center;
-}
 body {
   background-color: black;
 }
@@ -93,52 +23,7 @@ main {
   justify-content: center;
   height: 100vh;
 }
-.fa-brands {
-  padding: 10px;
-}
-.fa-solid {
-  padding: 10px;
-}
-.fa-light {
-  padding: 10px;
-}
-.back-btn {
-  display: none;
-  @include devices.phone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px black solid;
-    background-color: $text-colour;
-    height: 40px;
-    width: 150px;
-    font-size: 30px;
-    margin: 10px;
-    border-radius: 12px;
-    &:hover {
-      background-color: $button-hover-colour;
-      color: $text-colour;
-      box-shadow: 0 4px 8px $div-background-main;
-    }
-  }
-  @include devices.tablet {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px black solid;
-    background-color: $text-colour;
-    height: 40px;
-    width: 150px;
-    font-size: 30px;
-    margin: 10px;
-    border-radius: 12px;
-    &:hover {
-      background-color: $button-hover-colour;
-      color: $text-colour;
-      box-shadow: 0 4px 8px $div-background-main;
-    }
-  }
-}
+
 .skills {
   width: 85vw;
   display: flex;
@@ -149,14 +34,10 @@ main {
   color: $text-colour;
   margin-top: 50px;
   @include devices.phone {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
+    width: 90vw;
   }
   @include devices.tablet {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
+    width: 90vw;
   }
   &__header {
     display: flex;
@@ -188,10 +69,12 @@ main {
     border: $div-border;
     margin: 30px;
     @include devices.phone {
+      height: fit-content;
       width: 80vw;
       margin: 0px 30px 30px 30px;
     }
     @include devices.tablet {
+      height: fit-content;
       width: 80vw;
       margin: 0px 30px 30px 30px;
     }
@@ -201,16 +84,31 @@ main {
       flex-direction: column;
       justify-content: space-between;
       padding: 20px;
-      height: 25vh;
+      height: 15vh;
+      width: 20vw;
       background-color: $div-background-main;
-
+      @include devices.phone {
+        width: 60vw;
+        height: 30vh;
+        margin: 10px;
+      }
+      @include devices.tablet {
+        width: 60vw;
+        height: 30vh;
+        margin: 10px;
+      }
+      &:hover {
+        background-color: $div-background-border;
+      }
       & > img {
         border: 5px $text-colour solid;
         width: 9vw;
         height: 15vh;
         @include devices.phone {
-          width: 100px;
-          height: 100px;
+          width: 40vw;
+        }
+        @include devices.tablet {
+          width: 35vw;
         }
       }
     }

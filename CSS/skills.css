@@ -3,94 +3,6 @@
   padding: 0;
 }
 
-#Javascript {
-  display: none;
-}
-@media only screen and (max-width: 576px) {
-  #Javascript {
-    display: flex;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 992px) {
-  #Javascript {
-    display: flex;
-  }
-}
-
-#Java {
-  display: none;
-}
-@media only screen and (max-width: 576px) {
-  #Java {
-    display: flex;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 992px) {
-  #Java {
-    display: flex;
-  }
-}
-
-#Git {
-  display: none;
-}
-@media only screen and (max-width: 576px) {
-  #Git {
-    display: flex;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 992px) {
-  #Git {
-    display: flex;
-  }
-}
-
-#TDD {
-  display: none;
-}
-@media only screen and (max-width: 576px) {
-  #TDD {
-    display: flex;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 992px) {
-  #TDD {
-    display: flex;
-  }
-}
-
-#Firestore {
-  display: none;
-}
-@media only screen and (max-width: 576px) {
-  #Firestore {
-    display: flex;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 992px) {
-  #Firestore {
-    display: flex;
-  }
-}
-
-#SQL {
-  display: none;
-}
-@media only screen and (max-width: 576px) {
-  #SQL {
-    display: flex;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 992px) {
-  #SQL {
-    display: flex;
-  }
-}
-
-.fire {
-  justify-content: center;
-}
-
 body {
   background-color: black;
 }
@@ -99,60 +11,6 @@ main {
   display: flex;
   justify-content: center;
   height: 100vh;
-}
-
-.fa-brands {
-  padding: 10px;
-}
-
-.fa-solid {
-  padding: 10px;
-}
-
-.fa-light {
-  padding: 10px;
-}
-
-.back-btn {
-  display: none;
-}
-@media only screen and (max-width: 576px) {
-  .back-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px black solid;
-    background-color: whitesmoke;
-    height: 40px;
-    width: 150px;
-    font-size: 30px;
-    margin: 10px;
-    border-radius: 12px;
-  }
-  .back-btn:hover {
-    background-color: rgba(67, 81, 163, 0.55);
-    color: whitesmoke;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.55);
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 992px) {
-  .back-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px black solid;
-    background-color: whitesmoke;
-    height: 40px;
-    width: 150px;
-    font-size: 30px;
-    margin: 10px;
-    border-radius: 12px;
-  }
-  .back-btn:hover {
-    background-color: rgba(67, 81, 163, 0.55);
-    color: whitesmoke;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.55);
-  }
 }
 
 .skills {
@@ -167,16 +25,12 @@ main {
 }
 @media only screen and (max-width: 576px) {
   .skills {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
+    width: 90vw;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .skills {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
+    width: 90vw;
   }
 }
 .skills__header {
@@ -215,12 +69,14 @@ main {
 }
 @media only screen and (max-width: 576px) {
   .skills__display {
+    height: fit-content;
     width: 80vw;
     margin: 0px 30px 30px 30px;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .skills__display {
+    height: fit-content;
     width: 80vw;
     margin: 0px 30px 30px 30px;
   }
@@ -231,8 +87,26 @@ main {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  height: 25vh;
+  height: 15vh;
+  width: 20vw;
   background-color: rgba(0, 0, 0, 0.55);
+}
+@media only screen and (max-width: 576px) {
+  .skills__display__card {
+    width: 60vw;
+    height: 30vh;
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills__display__card {
+    width: 60vw;
+    height: 30vh;
+    margin: 10px;
+  }
+}
+.skills__display__card:hover {
+  background-color: rgba(101, 37, 212, 0.2);
 }
 .skills__display__card > img {
   border: 5px whitesmoke solid;
@@ -241,7 +115,11 @@ main {
 }
 @media only screen and (max-width: 576px) {
   .skills__display__card > img {
-    width: 100px;
-    height: 100px;
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .skills__display__card > img {
+    width: 35vw;
   }
 }

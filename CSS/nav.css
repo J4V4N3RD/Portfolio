@@ -31,6 +31,21 @@ button:hover {
   font-size: 100px;
   font-family: "Dancing Script", cursive;
 }
+@media only screen and (max-width: 576px) {
+  .name {
+    display: none;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .name {
+    display: none;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .name {
+    display: none;
+  }
+}
 
 .nav {
   margin-top: 50px;
@@ -63,9 +78,26 @@ button:hover {
 }
 @media only screen and (max-width: 576px) {
   .nav__btn {
-    width: 11.5vw;
+    width: 30vw;
     height: 5vh;
-    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .nav__btn {
+    width: 25vw;
+    height: 5vh;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .nav__btn {
+    width: 20vw;
+    height: 5vh;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .nav__btn {
+    width: 15vw;
+    height: 5vh;
   }
 }
 .nav__btn__link {
@@ -79,6 +111,30 @@ button:hover {
   text-decoration: none;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 576px) {
+  .nav__btn__link {
+    width: 28vw;
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .nav__btn__link {
+    width: 23vw;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .nav__btn__link {
+    width: 18vw;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .nav__btn__link {
+    width: 13vw;
+    font-size: 20px;
+  }
 }
 .nav__btn__ship {
   margin-top: 20px;
